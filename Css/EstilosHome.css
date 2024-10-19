@@ -1,0 +1,252 @@
+/* General Styles */
+
+body {
+    font-family: 'Acumin Variable Concept', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: rgb(214,204,194);
+    background: radial-gradient(circle, rgba(214,204,194,1) 20%, rgba(237,237,233,1) 58%, rgba(224,245,233,1) 90%);
+}
+
+header {
+    background-color: #888888;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 1000; /* Asegura que esté por encima de otros elementos */
+}
+
+.nav-bar {
+    display: flex;
+    align-items: center;
+}
+
+.nav-bar .logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: #FFFFFF;
+    margin-right: 20px;
+}
+
+.nav-bar .logo img {
+    height: 40px;
+    width: auto;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+nav ul li {
+    margin-right: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #FFFFFF;
+    font-weight: bold;
+    transition: background-color 0.3s, color 0.3s;
+    padding: 5px 10px;
+}
+
+nav ul li a:hover {
+    background-color: #FFFFFF;
+    color: #888888;
+}
+
+nav ul li a.active {
+    background-color: #FFFFFF;
+    color: #888888;
+}
+
+.login {
+    text-decoration: none;
+    color: #FFFFFF;
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+}
+
+
+main {
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+}
+
+.content {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    width: 100%;
+}
+
+.description {
+    width: 45%;
+}
+
+.description h1 {
+    font-size: 36px;
+    margin-bottom: 0;
+    font-weight: bold;
+}
+
+.description h2 {
+    font-size: 24px;
+    color: #888888;
+    margin-top: 0;
+}
+
+.description p {
+    font-size: 14px;
+    line-height: 1.6;
+    color: #111111;
+}
+
+.images {
+    width: 45%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.image-box {
+    background-color: #CCCCCC;
+    border: 1px solid #888888;
+    height: 350px;
+    width: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 18px;
+    color: #666666;
+    margin-left: 200px;
+    border-radius: 20px;
+    margin-top: 20px;
+}
+
+.slider-image {
+    display: none;
+    width: 100%;
+    height: auto;
+}
+
+.slider-image.active {
+    display: block;
+}
+
+footer {
+    background-color: #888888;
+    padding: 10px 20px;
+    text-align: center;
+    color: #FFFFFF;
+    font-size: 12px;
+}
+
+footer .social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 5px;
+    align-items: center;
+}
+
+footer .social-icons img {
+    width: 24px;
+    height: 24px;
+}
+
+footer .contact-info {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    margin-left: 15px;
+}
+
+footer .phone-icon {
+    width: 20px;
+    height: 20px;
+}
+
+.footer-links {
+    margin-top: 10px;
+}
+
+.footer-links p {
+    margin: 0;
+}
+
+.footer-links a {
+    color: #FFFFFF;
+    text-decoration: none;
+    margin: 0 5px;
+}
+
+.footer-links a:hover {
+    text-decoration: underline;
+}
+
+/*div de landing page*/
+#hiddenDiv {
+    display: none;
+    z-index: 9999; /* Asegúrate de que el z-index sea alto */
+    position: fixed; /* Cambia a fixed para que esté por encima de todos */
+    top: 50%; /* Centra verticalmente */
+    left: 50%; /* Centra horizontalmente */
+    transform: translate(-50%, -50%); /* Ajusta la posición para centrarlo */
+    background-color: #888888;
+    padding: 20px;
+    border-radius: 10px;
+    color: white;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Añade un sombreado para resaltar */
+}
+
+.AnuncioDivContainer {
+    display: flex;
+    justify-content: space-between; /* Espacio entre los divs internos */
+    align-items: stretch;
+    width: 850px;
+    height: 600px;
+    background-color: rgba(0, 0, 0, 0.9); /* Fondo negro */
+    color: white;
+    position: relative; /* Asegurar que el z-index funcione correctamente */
+    z-index: 9999; /* Z-index mayor para estar por encima */
+    margin: 0 auto;
+}
+
+.AnuncioDivContainer .textContainer{
+    width: 50%; /* 50% del ancho del contenedor */
+    height: 100%; /* Alto del div igual al del contenedor */
+    display: flex; /* Para centrar el contenido dentro de este div */
+    flex-direction: column; /* Colocar elementos en columna */
+    justify-content: center; /* Centrar verticalmente */
+    align-items: center; 
+}
+
+.AnuncioDivContainer .textContainer hr{
+    border: 0;
+    clear:both;
+    display:block;
+    width: 96%;
+    background-color:#FFFF00;
+    height: 1px;
+    margin-bottom: 25px;
+}
+
+.AnuncioDivContainer .textContainer .Social-Icons-Anuncio{
+    display: flex; /* Usar flexbox para los iconos */
+    justify-content: center;
+    gap: 20px; /* Espacio entre iconos */
+    margin-top: 10px;
+    background-color: white;
+    width: fit-content; /* Ajustar ancho al contenido */
+    padding: 5px; /* Espaciado interno */
+    border-radius: 10px;
+}

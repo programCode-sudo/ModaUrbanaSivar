@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Explora las tendencias de moda mundial y descubre lo que se lleva en otros países.">
+    <meta name="keywords" content="tendencias de moda mundial, moda internacional, estilos globales">
+    <meta name="robots" content="index, follow">
+
+    <meta property="og:title" content="Tendencias de Moda Mundial">
+    <meta property="og:description" content="Descubre los estilos y tendencias de moda en otros países.">
+    <meta property="og:image" content="url-a-imagen.jpg">
+    <meta property="og:url" content="https://www.tumodasite.com/tendencias-mundiales">
+
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="Tendencias de Moda Mundial">
+    <meta name="twitter:description" content="Descubre las últimas tendencias de moda en otros países.">
+    <meta name="twitter:image" content="url-a-imagen-twitter.jpg">
+    <link rel="icon" type="image/png" href="../imgs/Logo y Lema/WebLogo.PNG">
+    <link rel="stylesheet" href="../Css/EstilosTendencias.css">
+
+</head>
+<body>
+    <header>
+        <div class="nav-bar">
+            <a href="#" class="logo">
+                <img src="../imgs/Logo y Lema/WebLogo.PNG" alt="ModaUrbanaSanSivar">
+            </a>
+            <nav>
+                <ul>
+                    <li><a href="../index.html"><img src="../imgs/iconos/homeIco.png" style="width:15px; height: 15px; margin-right: 5px;">Home</a></li>
+                    <li><a href="#"><img src="../imgs/iconos/TiendaIco.png" style="width:15px; height: 15px; margin-right: 5px;">Tienda San sivar</a></li>
+                    <li><a href="../Secciones/TendenciasSanSivar.html"><img src="../imgs/iconos/TendenciasIco.png" style="width:15px; height: 15px; margin-right: 5px;">Tendencia Moda salvadoreña</a></li>
+                    <li><a href="#"><img src="../imgs/iconos/ayudaIco.png" style="width:15px; height: 15px; margin-right: 5px;">Ayuda</a></li>
+                </ul>
+            </nav>
+            <a href="#" class="login" style="margin-left: 600px;"><img src="../imgs/iconos/usuarioIco.png" style="width:15px; height: 15px; margin-right: 5px;">Iniciar Sesión</a>
+        </div>
+    </header>
+
+        <main>
+            <h2 class="separatorTitle">Galerías de Videos sobre Tendencias de Moda</h2>
+            <section class="videos-tendencias">
+                <div class="video-layout">
+                    <div class="main-video">
+                        <video id="mainVideo" controls>
+                            <source src="../Media/video1Tendencia.mp4" type="video/mp4">
+                            Tu navegador no soporta el video.
+                        </video>
+                    </div>
+                    <div class="gallery">
+                        <video class="thumbnail" onclick="changeVideo('../Media/video1Tendencia.mp4')" preload="metadata">
+                            <source src="../Media/video1Tendencia.mp4" type="video/mp4">
+                        </video>
+                        <video class="thumbnail" onclick="changeVideo('../Media/video2Tendecia.mp4')" preload="metadata">
+                            <source src="../Media/video2Tendecia.mp4" type="video/mp4">
+                        </video>
+                        <video class="thumbnail" onclick="changeVideo('../Media/video3Tendencia.mp4')" preload="metadata">
+                            <source src="../Media/video3Tendencia.mp4" type="video/mp4">
+                        </video>
+                    </div>
+                </div>
+            </section>
+
+            <hr style="margin-top: 29px; margin-bottom: 29px;">
+
+            <h2 class="separatorTitle">Articulos en tendencia</h2>
+            <section class="articles">
+
+                <article>
+                    <div class="article-wrapper">
+                        <figure>
+                            <img src="https://picsum.photos/id/103/800/450" alt="" />
+                        </figure>
+                        <div class="article-body">
+                            <h2>This is some title</h2>
+                            <p>
+                            Curabitur convallis ac quam vitae laoreet. Nulla mauris ante, euismod sed lacus sit amet, congue bibendum eros. Etiam mattis lobortis porta. Vestibulum ultrices iaculis enim imperdiet egestas.
+                            </p>
+                        </div>
+                        <hr>
+                        <div class="ComentLikeContainer">
+                            <div class="like-section">
+                                <span id="likeCount" style="text-align: center;">0</span>
+                                <img src="https://cdn-icons-png.flaticon.com/512/1077/1077035.png" alt="like" class="like-icon" id="likeIcon" />
+                            </div>
+                            <div class="comment-section">
+                                <input type="text" id="commentInput" placeholder="Escribe tu comentario aquí..." />
+                                <button id="submitComment">Enviar comentario</button>
+                            </div>
+                            <div id="commentsList"></div>
+                        </div>
+                    </div>
+                </article>
+
+                <article>
+                    <div class="article-wrapper">
+                        <figure>
+                            <img src="https://picsum.photos/id/103/800/450" alt="" />
+                        </figure>
+                        <div class="article-body">
+                            <h2>This is some title</h2>
+                            <p>
+                            Curabitur convallis ac quam vitae laoreet. Nulla mauris ante, euismod sed lacus sit amet, congue bibendum eros. Etiam mattis lobortis porta. Vestibulum ultrices iaculis enim imperdiet egestas.
+                            </p>
+                        </div>
+                        <hr>
+                        <div class="ComentLikeContainer">
+                            <div class="like-section">
+                                <span id="likeCount" style="text-align: center;">0</span>
+                                <img src="https://cdn-icons-png.flaticon.com/512/1077/1077035.png" alt="like" class="like-icon" id="likeIcon" />
+                            </div>
+                            <div class="comment-section">
+                                <input type="text" id="commentInput" placeholder="Escribe tu comentario aquí..." />
+                                <button id="submitComment">Enviar comentario</button>
+                            </div>
+                            <div id="commentsList"></div>
+                        </div>
+                    </div>
+                </article>
+
+                <article>
+                    <div class="article-wrapper">
+                        <figure>
+                            <img src="https://picsum.photos/id/103/800/450" alt="" />
+                        </figure>
+                        <div class="article-body">
+                            <h2>This is some title</h2>
+                            <p>
+                            Curabitur convallis ac quam vitae laoreet. Nulla mauris ante, euismod sed lacus sit amet, congue bibendum eros. Etiam mattis lobortis porta. Vestibulum ultrices iaculis enim imperdiet egestas.
+                            </p>
+                        </div>
+                        <hr>
+                        <div class="ComentLikeContainer">
+                            <div class="like-section">
+                                <span id="likeCount" style="text-align: center;">0</span>
+                                <img src="https://cdn-icons-png.flaticon.com/512/1077/1077035.png" alt="like" class="like-icon" id="likeIcon" />
+                            </div>
+                            <div class="comment-section">
+                                <input type="text" id="commentInput" placeholder="Escribe tu comentario aquí..." />
+                                <button id="submitComment">Enviar comentario</button>
+                            </div>
+                            <div id="commentsList"></div>
+                        </div>
+                    </div>
+                </article>
+
+                <article>
+                    <div class="article-wrapper">
+                        <figure>
+                            <img src="https://picsum.photos/id/103/800/450" alt="" />
+                        </figure>
+                        <div class="article-body">
+                            <h2>This is some title</h2>
+                            <p>
+                            Curabitur convallis ac quam vitae laoreet. Nulla mauris ante, euismod sed lacus sit amet, congue bibendum eros. Etiam mattis lobortis porta. Vestibulum ultrices iaculis enim imperdiet egestas.
+                            </p>
+                        </div>
+                        <hr>
+                        <div class="ComentLikeContainer">
+                            <div class="like-section">
+                                <span id="likeCount" style="text-align: center;">0</span>
+                                <img src="https://cdn-icons-png.flaticon.com/512/1077/1077035.png" alt="like" class="like-icon" id="likeIcon" />
+                            </div>
+                            <div class="comment-section">
+                                <input type="text" id="commentInput" placeholder="Escribe tu comentario aquí..." />
+                                <button id="submitComment">Enviar comentario</button>
+                            </div>
+                            <div id="commentsList"></div>
+                        </div>
+                    </div>
+                </article>
+
+                <article>
+                    <div class="article-wrapper">
+                        <figure>
+                            <img src="https://picsum.photos/id/103/800/450" alt="" />
+                        </figure>
+                        <div class="article-body">
+                            <h2>This is some title</h2>
+                            <p>
+                            Curabitur convallis ac quam vitae laoreet. Nulla mauris ante, euismod sed lacus sit amet, congue bibendum eros. Etiam mattis lobortis porta. Vestibulum ultrices iaculis enim imperdiet egestas.
+                            </p>
+                        </div>
+                        <hr>
+                        <div class="ComentLikeContainer">
+                            <div class="like-section">
+                                <span id="likeCount" style="text-align: center;">0</span>
+                                <img src="https://cdn-icons-png.flaticon.com/512/1077/1077035.png" alt="like" class="like-icon" id="likeIcon" />
+                            </div>
+                            <div class="comment-section">
+                                <input type="text" id="commentInput" placeholder="Escribe tu comentario aquí..." />
+                                <button id="submitComment">Enviar comentario</button>
+                            </div>
+                            <div id="commentsList"></div>
+                        </div>
+                    </div>
+                </article>
+
+                <article>
+                    <div class="article-wrapper">
+                        <figure>
+                            <img src="https://picsum.photos/id/103/800/450" alt="" />
+                        </figure>
+                        <div class="article-body">
+                            <h2>This is some title</h2>
+                            <p>
+                            Curabitur convallis ac quam vitae laoreet. Nulla mauris ante, euismod sed lacus sit amet, congue bibendum eros. Etiam mattis lobortis porta. Vestibulum ultrices iaculis enim imperdiet egestas.
+                            </p>
+                        </div>
+                        <hr>
+                        <div class="ComentLikeContainer">
+                            <div class="like-section">
+                                <span id="likeCount" style="text-align: center;">0</span>
+                                <img src="https://cdn-icons-png.flaticon.com/512/1077/1077035.png" alt="like" class="like-icon" id="likeIcon" />
+                            </div>
+                            <div class="comment-section">
+                                <input type="text" id="commentInput" placeholder="Escribe tu comentario aquí..." />
+                                <button id="submitComment">Enviar comentario</button>
+                            </div>
+                            <div id="commentsList"></div>
+                        </div>
+                    </div>
+                </article>
+
+            </section>
+        </main>
+
+    <footer>
+        <p>Contactos:</p>
+        <div class="social-icons">
+            <a href="#"><img src="../imgs/iconos/twitterIco.png" alt="Twitter"></a>
+            <a href="#"><img src="../imgs/iconos/instagramIco.png" alt="Instagram"></a>
+            <a href="#"><img src="../imgs/iconos/facebookIco.png" alt="Facebook"></a>
+            <div class="contact-info">
+                <img src="../imgs/iconos/telefonoico.png" alt="SanSivar-Teléfono" class="phone-icon">
+                <span>72036006</span>
+            </div>
+        </div>
+        <div class="footer-links">
+            <p>&copy; ModaUrbanaSanSivar 2024
+                <a href="#">Condiciones del Uso</a> |
+                <a href="#">Política de Privacidad</a> |
+                <a href="#">Política de Cookies</a> |
+                <a href="#">Accesibilidad</a>
+            </p>
+        </div>
+    </footer>
+    <script src="../script/scriptTendencias.js"></script>
+</body>
+</html>
