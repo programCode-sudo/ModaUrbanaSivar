@@ -45,19 +45,19 @@
                 <div class="video-layout">
                     <div class="main-video">
                         <video id="mainVideo" controls>
-                            <source src="../Media/video1Tendencia.mp4" type="video/mp4">
+                            <source src="../Media/video.mp4" type="video/mp4">
                             Tu navegador no soporta el video.
                         </video>
                     </div>
                     <div class="gallery">
+                        <video class="thumbnail" onclick="changeVideo('../Media/video.mp4')" preload="metadata">
+                            <source src="../Media/video.mp4" type="video/mp4">
+                        </video>
                         <video class="thumbnail" onclick="changeVideo('../Media/video1Tendencia.mp4')" preload="metadata">
                             <source src="../Media/video1Tendencia.mp4" type="video/mp4">
                         </video>
-                        <video class="thumbnail" onclick="changeVideo('../Media/video2Tendecia.mp4')" preload="metadata">
-                            <source src="../Media/video2Tendecia.mp4" type="video/mp4">
-                        </video>
-                        <video class="thumbnail" onclick="changeVideo('../Media/video3Tendencia.mp4')" preload="metadata">
-                            <source src="../Media/video3Tendencia.mp4" type="video/mp4">
+                        <video class="thumbnail" onclick="changeVideo('../Media/video.mp4')" preload="metadata">
+                            <source src="../Media/video.mp4" type="video/mp4">
                         </video>
                     </div>
                 </div>
@@ -68,15 +68,15 @@
             <h2 class="separatorTitle">Articulos en tendencia</h2>
             <section class="articles">
 
-                <article>
+                <article> <!--1-->
                     <div class="article-wrapper">
                         <figure>
-                            <img src="https://picsum.photos/id/103/800/450" alt="" />
+                            <img src="/Media/imgsTend/IMG_3703.jpg" alt="Hoodie1" />
                         </figure>
                         <div class="article-body">
-                            <h2>This is some title</h2>
+                            <h2>Drowning in Bauty Hoodie</h2>
                             <p>
-                            Curabitur convallis ac quam vitae laoreet. Nulla mauris ante, euismod sed lacus sit amet, congue bibendum eros. Etiam mattis lobortis porta. Vestibulum ultrices iaculis enim imperdiet egestas.
+                                Perfecta para noches frescas, esta sudadera ofrece comodidad y un look sencillo pero moderno. Ideal para un estilo relajado.
                             </p>
                         </div>
                         <hr>
@@ -94,15 +94,41 @@
                     </div>
                 </article>
 
-                <article>
+                <article><!--2-->
                     <div class="article-wrapper">
                         <figure>
-                            <img src="https://picsum.photos/id/103/800/450" alt="" />
+                            <img src="/Media/imgsTend/IMG_42492.jpg" alt="team_hst" />
                         </figure>
                         <div class="article-body">
-                            <h2>This is some title</h2>
+                            <h2>Opulence </h2>
                             <p>
-                            Curabitur convallis ac quam vitae laoreet. Nulla mauris ante, euismod sed lacus sit amet, congue bibendum eros. Etiam mattis lobortis porta. Vestibulum ultrices iaculis enim imperdiet egestas.
+                                Un conjunto de prendas urbanas que destacan por su comodidad y estilo moderno. Perfecto para aquellos que buscan expresarse con moda.
+                            </p> <br>
+                        </div>
+                        <hr>
+                        <div class="ComentLikeContainer">
+                            <div class="like-section">
+                                <span id="likeCount" style="text-align: center;">0</span>
+                                <img src="https://cdn-icons-png.flaticon.com/512/1077/1077035.png" alt="like" class="like-icon" id="likeIcon" />
+                            </div>
+                            <div class="comment-section">
+                                <input type="text" id="commentInput" placeholder="Escribe tu comentario aquí..." />
+                                <button id="submitComment">Enviar comentario</button>
+                            </div>
+                            <div id="commentsList"></div>
+                        </div>
+                    </div>
+                </article>
+
+                <article><!--3-->
+                    <div class="article-wrapper">
+                        <figure>
+                            <img src="/Media/imgsTend/IMG_3772.jpg" alt="hoodie2" />
+                        </figure>
+                        <div class="article-body">
+                            <h2>Flow and Ingnite Hoodie</h2>
+                            <p>
+                                Una prenda cómoda y artística con un diseño gráfico llamativo en la espalda. Ideal para quienes desean un look creativo.
                             </p>
                         </div>
                         <hr>
@@ -120,15 +146,15 @@
                     </div>
                 </article>
 
-                <article>
+                <article><!--4-->
                     <div class="article-wrapper">
                         <figure>
-                            <img src="https://picsum.photos/id/103/800/450" alt="" />
+                            <img src="/Media/imgsTend/IMG_3643.jpg" alt="t-shirt1" />
                         </figure>
                         <div class="article-body">
-                            <h2>This is some title</h2>
+                            <h2>Drowning in Beauty Tee</h2> 
                             <p>
-                            Curabitur convallis ac quam vitae laoreet. Nulla mauris ante, euismod sed lacus sit amet, congue bibendum eros. Etiam mattis lobortis porta. Vestibulum ultrices iaculis enim imperdiet egestas.
+                                Con un diseño gráfico de Marilyn Monroe en la espalda, esta camiseta destaca por su estilo retro y moderno a la vez. Perfecta para fans del ícono pop.
                             </p>
                         </div>
                         <hr>
@@ -146,15 +172,15 @@
                     </div>
                 </article>
 
-                <article>
+                <article><!--5-->
                     <div class="article-wrapper">
                         <figure>
-                            <img src="https://picsum.photos/id/103/800/450" alt="" />
+                            <img src="/Media/imgsTend/IMG_4107.jpg" alt="t-shirt2" />
                         </figure>
                         <div class="article-body">
-                            <h2>This is some title</h2>
+                            <h2>Champion Tee</h2> <br>
                             <p>
-                            Curabitur convallis ac quam vitae laoreet. Nulla mauris ante, euismod sed lacus sit amet, congue bibendum eros. Etiam mattis lobortis porta. Vestibulum ultrices iaculis enim imperdiet egestas.
+                            La camiseta Champion es un ícono de la moda urbana, conocida por su comodidad y estilo sencillo pero impactante. Perfecta para quienes buscan un look relajado con una marca reconocida por su calidad.
                             </p>
                         </div>
                         <hr>
@@ -172,41 +198,15 @@
                     </div>
                 </article>
 
-                <article>
+                <article><!--6-->
                     <div class="article-wrapper">
                         <figure>
-                            <img src="https://picsum.photos/id/103/800/450" alt="" />
+                            <img src="/Media/imgsTend/IMG_4069.jpg" alt="t-shirt3" />
                         </figure>
                         <div class="article-body">
-                            <h2>This is some title</h2>
+                            <h2>Archangel Tee</h2><br>
                             <p>
-                            Curabitur convallis ac quam vitae laoreet. Nulla mauris ante, euismod sed lacus sit amet, congue bibendum eros. Etiam mattis lobortis porta. Vestibulum ultrices iaculis enim imperdiet egestas.
-                            </p>
-                        </div>
-                        <hr>
-                        <div class="ComentLikeContainer">
-                            <div class="like-section">
-                                <span id="likeCount" style="text-align: center;">0</span>
-                                <img src="https://cdn-icons-png.flaticon.com/512/1077/1077035.png" alt="like" class="like-icon" id="likeIcon" />
-                            </div>
-                            <div class="comment-section">
-                                <input type="text" id="commentInput" placeholder="Escribe tu comentario aquí..." />
-                                <button id="submitComment">Enviar comentario</button>
-                            </div>
-                            <div id="commentsList"></div>
-                        </div>
-                    </div>
-                </article>
-
-                <article>
-                    <div class="article-wrapper">
-                        <figure>
-                            <img src="https://picsum.photos/id/103/800/450" alt="" />
-                        </figure>
-                        <div class="article-body">
-                            <h2>This is some title</h2>
-                            <p>
-                            Curabitur convallis ac quam vitae laoreet. Nulla mauris ante, euismod sed lacus sit amet, congue bibendum eros. Etiam mattis lobortis porta. Vestibulum ultrices iaculis enim imperdiet egestas.
+                                Esta camiseta con alas en la espalda es ideal para aquellos que buscan un estilo moderno con un toque de originalidad. El diseño artístico ofrece un look llamativo que destaca en cualquier lugar.
                             </p>
                         </div>
                         <hr>
