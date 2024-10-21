@@ -11,4 +11,4 @@ Allow: /imgs/imagenOpengraph/
 Allow: /Secciones/
 Allow: /Media/
 
-Sitemap: https://programcode-sudo.github.io/ModaUrbanaSivar/sitemap.xml
+Sitemap: https://github.com/programCode-sudo/ModaUrbanaSivar/blob/main/sitemap.xml
