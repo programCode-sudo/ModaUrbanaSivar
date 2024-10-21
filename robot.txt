@@ -1,0 +1,14 @@
+User-agent: *
+Disallow: /git/
+Disallow: /script/
+Disallow: /imgs/iconos/
+Disallow: /imgs/Logo y Lema/
+
+Allow: /Css/
+Allow: /imgs/RopaCasual/
+Allow: /imgs/RopaVenta/
+Allow: /imgs/imagenOpengraph/
+Allow: /Secciones/
+Allow: /Media/
+
+Sitemap: https://programcode-sudo.github.io/ModaUrbanaSivar/sitemap.xml
